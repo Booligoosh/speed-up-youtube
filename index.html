@@ -8,4 +8,4 @@
 <h1>Speed up / slow down YouTube</h1>
 <h2>Speed up or slow down YouTube videos past than the default (i.e. below 0.25x or over 2x)
 <h3>Drag the link below to your bookmarks bar to get started!  (then you can just click on the bookmark to use)</h3>
-<a href="javascript:if(window.location.hostname == /(www\.)?youtube.com/){document.getElementsByTagName('video')[0].playbackRate = prompt('Enter playback rate:')}else{alert('You are not on YouTube!')}">Speed up / slow down YouTube!</a>
+<a href="javascript:if(/(www\.)?youtube\.com/.test(window.location.hostname)){document.getElementsByTagName('video')[0].playbackRate = prompt('Enter playback rate:')}else{alert('You are not on YouTube!')}">Speed up / slow down YouTube!</a>
